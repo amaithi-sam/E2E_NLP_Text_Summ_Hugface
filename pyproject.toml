@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "e2e-nlp-text-summ-hugface"
+version = "0.1.0"
+description = ""
+authors = ["amaithi-sam <amaithichirasan.s@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.40.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
