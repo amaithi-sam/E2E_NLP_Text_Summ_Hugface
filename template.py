@@ -24,7 +24,7 @@ f"src/{project_name}/constants/__init__.py",
 "app.py",
 "main.py",
 "Dockerfile",
-"setup.py"
+"setup.py",
 "research/trails.ipynb"
 ]
 
@@ -42,3 +42,4 @@ for filepath in list_of_files:
         logging.info("Creating empty file: (filepath}")
     else:
         logging.info(f"{filename} is already exists")
+        
