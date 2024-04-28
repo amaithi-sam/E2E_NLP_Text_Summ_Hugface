@@ -23,11 +23,17 @@ class ModelTrainer:
         dataset_samsum_pt = load_from_disk(self.config.data_path)
 
         # trainer_args = TrainingArguments(
-        #     output_dir=self.config.root_dir, num_train_epochs=self.config.num_train_epochs, warmup_steps=self.config.warmup_steps,
-        #     per_device_train_batch_size=self.config.per_device_train_batch_size, per_device_eval_batch_size=self.config.per_device_train_batch_size,
-        #     weight_decay=self.config.weight_decay, logging_steps=self.config.logging_steps,
-        #     evaluation_strategy=self.config.evaluation_strategy, eval_steps=self.config.eval_steps, save_steps=1e6,
-        #     gradient_accumulation_steps=self.config.gradient_accumulation_steps
+        #     output_dir=self.config.root_dir, 
+        #     num_train_epochs=float(self.config.num_train_epochs), 
+        #     warmup_steps=int(self.config.warmup_steps),
+        #     per_device_train_batch_size=int(self.config.per_device_train_batch_size), 
+        #     per_device_eval_batch_size=int(self.config.per_device_train_batch_size),
+        #     weight_decay=float(self.config.weight_decay), 
+        #     logging_steps=float(self.config.logging_steps),
+        #     evaluation_strategy=self.config.evaluation_strategy, 
+        #     eval_steps=float(self.config.eval_steps), 
+        #     save_steps=1e6,
+        #     gradient_accumulation_steps=int(self.config.gradient_accumulation_steps)
         # ) 
 
 
